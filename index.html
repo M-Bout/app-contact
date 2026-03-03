@@ -1,6 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Projet Entreprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <form>
     <input type="text" placeholder="Nom">
     <input type="email" placeholder="Email">
     <textarea placeholder="Message"></textarea>
     <button type="submit">Envoyer</button>
 </form>
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Empêche la page de se recharger
+        alert('Formulaire envoyé avec succès !');
+        form.reset(); // Vide les champs
+    });
+</script>
+</body>
+</html>
